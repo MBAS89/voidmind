@@ -25,5 +25,5 @@ setup(
         "Programming Language :: Python :: 3.11",
         "Programming Language :: Python :: 3.12",
     ],
-    url="https://github.com/nuyvo/voidmind/tree/main/sdk/python",
+    url="https://github.com/MBAS89/voidmind/tree/main/sdk/python",
 )

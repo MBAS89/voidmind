@@ -249,7 +249,7 @@ Background Tasks
 
 ```bash
 # On your VPS
-git clone https://github.com/nuyvo/voidmind.git /opt/voidmind
+git clone https://github.com/MBAS89/voidmind.git /opt/voidmind
 cd /opt/voidmind
 bash scripts/setup.sh your-domain.com admin@your-domain.com
 ```
@@ -476,7 +476,7 @@ We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) and [CO
 
 ### Security
 
-If you discover a security issue, please email security@voidmind.local (or the project maintainer) privately. Do not open a public issue.
+If you discover a security issue, please open a private issue or contact the project maintainer directly. Do not open a public issue.
 
 See [SECURITY.md](SECURITY.md) for our security policy.
 

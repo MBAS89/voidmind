@@ -577,7 +577,7 @@ router.get('/compliance', adminAuth, adminRateLimit, async (req, res) => {
     data_residency: 'vps_location_only',
     open_source: {
       license: 'MIT',
-      repository: 'https://github.com/nuyvo/voidmind',
+      repository: 'https://github.com/MBAS89/voidmind',
       audit_commit: process.env.GIT_COMMIT || 'unknown',
       last_audit_date: new Date().toISOString().slice(0, 10),
     },
@@ -595,7 +595,7 @@ router.get('/compliance', adminAuth, adminRateLimit, async (req, res) => {
       processor_contract: 'not_applicable_self_hosted',
     },
     verification: {
-      code_review_url: 'https://github.com/nuyvo/voidmind/blob/main/src/services/session.js',
+      code_review_url: 'https://github.com/MBAS89/voidmind/blob/main/src/services/session.js',
       session_wipe_function: 'wipeSession()',
       no_database_for_user_data: true,
       no_external_api_calls: true,

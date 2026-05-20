@@ -2,7 +2,7 @@ Metadata-Version: 2.4
 Name: voidmind
 Version: 1.0.0
 Summary: Official Python SDK for VoidMind — Zero-Knowledge AI Gateway
-Home-page: https://github.com/nuyvo/voidmind/tree/main/sdk/python
+Home-page: https://github.com/MBAS89/voidmind/tree/main/sdk/python
 Author: Mohammed Badran AbuSiam (Nuyvo LLC)
 Author-email: Mohammed Badran AbuSiam <admin@voidmind.local>
 License: MIT

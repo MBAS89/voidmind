@@ -19,7 +19,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nuyvo/voidmind.git",
+    "url": "https://github.com/MBAS89/voidmind.git",
     "directory": "sdk/node"
   },
   "engines": {

@@ -11,7 +11,7 @@
 ### 2. Run Setup Script
 
 ```bash
-git clone https://github.com/nuyvo/voidmind.git /opt/voidmind
+git clone https://github.com/MBAS89/voidmind.git /opt/voidmind
 cd /opt/voidmind
 bash scripts/setup.sh your-domain.com admin@your-domain.com
 ```

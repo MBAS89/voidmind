@@ -1,0 +1,28 @@
+{
+  "name": "voidmind-sdk",
+  "version": "1.0.0",
+  "description": "Official Node.js SDK for VoidMind — Zero-Knowledge AI Gateway",
+  "main": "src/client.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "test": "node examples/basic.js"
+  },
+  "keywords": [
+    "voidmind",
+    "ai-gateway",
+    "ollama",
+    "privacy",
+    "llm",
+    "chatbot"
+  ],
+  "author": "Mohammed Badran AbuSiam (Nuyvo LLC)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nuyvo/voidmind.git",
+    "directory": "sdk/node"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

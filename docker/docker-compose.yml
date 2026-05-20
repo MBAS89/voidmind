@@ -1,0 +1,49 @@
+# VoidMind — Docker Compose (Optional)
+# Runs VoidMind + Ollama sidecar for local development or small deployments.
+# For production, prefer bare-metal Ollama + PM2 for better performance.
+
+version: "3.8"
+
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: voidmind-ollama
+    volumes:
+      - ollama-data:/root/.ollama
+    ports:
+      - "127.0.0.1:11434:11434"
+    environment:
+      - OLLAMA_HOST=0.0.0.0:11434
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:11434/api/tags"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  voidmind:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: voidmind-gateway
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - HOST=0.0.0.0
+      - OLLAMA_HOST=http://ollama:11434
+      - OLLAMA_DEFAULT_MODEL=qwen2.5:3b
+      - DB_PATH=/app/data/admin.db
+    env_file:
+      - ../.env
+    volumes:
+      - voidmind-data:/app/data
+    depends_on:
+      ollama:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  ollama-data:
+  voidmind-data:

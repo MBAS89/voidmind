@@ -2,6 +2,8 @@
 
 Official Node.js client for the VoidMind Zero-Knowledge AI Gateway.
 
+**Repository:** https://github.com/MBAS89/voidmind
+
 ## Install
 
 ```bash

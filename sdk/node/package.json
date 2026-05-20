@@ -17,6 +17,10 @@
   ],
   "author": "Mohammed Badran AbuSiam (Nuyvo LLC)",
   "license": "MIT",
+  "homepage": "https://github.com/MBAS89/voidmind#readme",
+  "bugs": {
+    "url": "https://github.com/MBAS89/voidmind/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/MBAS89/voidmind.git",
